@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    --primary-color-wh: #ffffff;
+    --primary-color-gr: #5ae000;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #121a2b;
+}
+.container1{
+    width: 700px;
+}
+.tanggal label{
+    font-size: 1.6em;
+    font-weight: 0.80rem;
+    color: var(--primary-color-wh);
+}
+.tanggal input{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    justify-content: left;
+    margin-left: 0px;
+    position: absolute;
+    height: 5rem;
+    width: 29rem;
+    margin: 0;
+    cursor: pointer;
+    border: 2px solid var(--primary-color-wh);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--primary-color-wh);
+    font-size: 1.6em;
+    font-weight: 0.80rem;
+    padding-left: 30px;
+    padding-right: 23px;
+    margin-top: 8px;
+} 
+::-webkit-calendar-picker-indicator{
+    background-color: #f0ffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.tanggal input:hover{
+    box-shadow: 0 0 12px var(--primary-color-gr);
+}
+img{
+    width: 35px;
+}
+.radio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: -7px;
+    margin-top: 118px;
+}
+.input-radio{
+    position: relative;
+    height: 7rem;
+    width: 7rem;
+    margin: 0.5rem;
+}
+.input-radio input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+.input-radio .radio-title{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    height: 74%;
+    width: 190%;
+    border: 2px solid var(--primary-color-wh);
+    border-radius: 8px;
+    transition: all 300ms ease;
+}
+#lk{
+    margin-right: 130px;
+}
+.input-radio label{
+    color: var(--primary-color-wh);
+    font-size: 1.6em;
+    margin-left: 8px;
+    font-weight: 0.80rem;
+}
+input:checked + .radio-title{
+    background-color: var(--primary-color-gr);
+    box-shadow: 0 0 12px var(--primary-color-gr);
+}
+input:hover + .radio-title{
+    box-shadow: 0 0 12px var(--primary-color-gr);
+}
+.tinggi, .berat{
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+}
+.tinggi{
+    margin-bottom: 20px;
+}
+.submitarea input{
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 2.2em;
+    padding: 0 30px;
+    line-height: 80px;
+    border-radius: 10px;
+    border: 2px solid #f0ffff;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+.Labelline{
+    color: #f0ffff;
+    position: absolute;
+    font-size: 1.6em;
+    padding: 0 15px;
+    margin: 0 25px;
+    background-color: #121a2b;
+    transition: 0.2s ease;
+}
+.submitarea input:focus, .submitarea input:valid{
+    color: #66ff00;
+    border: 4px solid #66ff00;
+}
+.submitarea input:focus + .Labelline, .submitarea input:valid + .Labelline{
+    color: #66ff00;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px, -16px) scale(0.88);
+    z-index: 1111;
+}
+.submitarea input:hover{
+    box-shadow: 0 0 12px var(--primary-color-gr);
+}
+.teks{
+    font-size: 29px;
+    font-weight: 500;
+    color: var(--primary-color-gr);
+}
+button{
+    margin-left: 500px;
+    background-color: transparent;
+    border: 2px solid #f0ffff;
+    font-size: 27px;
+    font-weight: 500;
+    color: var(--primary-color-wh);
+    position: absolute;
+    margin-top: 9px;
+    height: 12.51rem;
+    width: 12.4rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:focus, button:valid{
+    color: #66ff00;
+    border: 4px solid #66ff00;
+}
+button:hover{
+    box-shadow: 0 0 12px var(--primary-color-gr);
+}
+.hasil{
+    justify-content: center;
+    text-align: center;
+}
+.imt{
+    padding-top: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 27px;
+    font-weight: 500;
+    color: var(--primary-color-wh);
+    background-color: transparent;
+    border: 2px solid #f0ffff;
+    height: 5.51rem;
+    width: 15.4rem;
+    border-radius: 8px;
+}
+.kategori{
+    display: inline-block;
+    font-size: 27px;
+    font-weight: 500;
+    color: var(--primary-color-wh);
+    background-color: transparent;
+    border: 2px solid #f0ffff;
+    height: 5.51rem;
+    width: 29.4rem;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding-top: 20px;
+}
+/* .container2{
+    box-sizing: border-box;
+}
+body calc.php{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.hasil{
+    width: 470px;
+    padding: 25px 25px 25px;
+    color: #f0ffff;
+} */
+/* form{
+    text-align: left;
+    margin-left: 26px;
+}
+#tanggal_lahir{
+    font-family: 'poppins';
+    margin-top: 10px;
+}
+.container1 input{
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 2.2em;
+    padding: 0 30px;
+    line-height: 80px;
+    border-radius: 10px;
+    border: 2px solid #f0ffff;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+.tanggal{
+    color: #f0ffff;
+    font-family: 'poppins';
+}
+input[type="date"]{
+    color: #f0ffff;
+}
+.textLabel{
+    font-family: 'poppins';
+    color: #f0ffff;
+    position: absolute;
+    font-size: 1.6em;
+    padding: 0 25px;
+    margin: 0 25px;
+    background-color: #1C2841;
+    transition: 0.2s ease;
+}
+input:focus, input:valid{
+    color: #66ff00;
+    border: 4px solid #66ff00;
+}
+input:focus + .textLabel, input:valid + .textLabel{
+    color: #66ff00;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px, -16px) scale(0.88);
+    z-index: 1111;
+} */
+
+/* 
+Kode Warna:
+    hitam: #21251F
+    hijau: #C8F560
+    abuabu: #1C2841
+    ungu: #1C2841
+*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* menyembunyikan panah pada Chrome dan Safari */
+  appearance: none; /* menyembunyikan panah pada browser lain */
+}
